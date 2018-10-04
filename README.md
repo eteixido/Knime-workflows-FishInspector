@@ -1,6 +1,6 @@
 # Knime Workflows for FishInspector
 
-KNIME workflows required for subsequent analysis of the output of [FishInspector]( https://github.com/sscholz-UFZ/FishInspector).
+This collection of KNIME workflows is required for subsequent analysis of the output of [FishInspector]( https://github.com/sscholz-UFZ/FishInspector).
 The FishInspector software has been initially developed for images obtained with an automated capillary position system [VAST](http://www.unionbio.com/vast/) BioImager™. However, images from other sources can be used as well after appropriate conversion using the example below.
 The FishInspector provides the coordinates of morphological features as [JSON]( https://en.wikipedia.org/wiki/JSON) files. We had been mainly interested in concentration-response analysis of fish embryos exposed to chemicals. Therefore, various KNIME workflows with embedded R-scripts are provided for subsequent data processing and analysis. Prior to concentration-response analysis it is required to analyse the distribution/variability of features in control embryos. 
 
@@ -12,7 +12,7 @@ More details on the software and the subsequent data analysis can be found in th
 *Teixido, E., Kießling, T.R., Krupp, E., Quevedo, C., Muriana, A., Scholz, S., 2018. Automated morphological feature assessment for zebrafish embryo developmental toxicity screens.  Tox. Sci. accepted.*
 
 ## Conversion workflow for non-capillary images
-Images from other origin can be used as well but require automatic conversion to an image with a virtual capillary. This can be done with a KNIME workflow and an embedded imageJ macro. The workflow can handle multiple images simultaneously. An installation of KNIME and imageJ on your computer is required. Depending on the image quality certain parameters of the workflow may have to be adjusted. Images of embryos from a lateral orientation are required.
+Images not obtained by automatic positioning in a glass capillary - and hence, not presenting capillary boundaries - can be used as well but require automatic conversion to an image with a virtual capillary. This can be done with a KNIME workflow and an embedded imageJ macro. The workflow can handle multiple images simultaneously. An installation of KNIME and imageJ on your computer is required. Depending on the image quality certain parameters of the workflow may have to be adjusted. Images of embryos from a lateral orientation are required.
 
 [Knime workflow archive](Rotate_crop.knwf)
 
