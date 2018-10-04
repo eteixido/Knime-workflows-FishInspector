@@ -16,18 +16,18 @@ Images from other origin can be used as well but require automatic conversion to
 
 ## Workflow for extraction of JSON files and generation of box-whisker plots for different features
 This workflow extracts the coordinates of the annotated features in the FishInspector JSON files and calculates these morphological parameters: 
-*Body length
-*Eye size
-*Pericard size
-*Yolk sac size
-*Head size
-*Maximum tail curvature 
-*Three tail angles (three equidistance points along the nothocord)
-*Head-trunk angle (48 hpf)
-*Otolith-eye distance (96 hpf)
-*Jaw-eye distance (96 hpf)
-*Mandibular arch distance (96 hpf)
-*Swim bladder presence and size (96 hpf)
+* Body length
+* Eye size
+* Pericard size
+* Yolk sac size
+* Head size
+* Maximum tail curvature 
+* Three tail angles (three equidistance points along the nothocord)
+* Head-trunk angle (48 hpf)
+* Otolith-eye distance (96 hpf)
+* Jaw-eye distance (96 hpf)
+* Mandibular arch distance (96 hpf)
+* Swim bladder presence and size (96 hpf)
 
 The morphological paramaters are calculated using the R packages [Features](https://cran.r-project.org/web/packages/features/features.pdf) and [Momocs](https://cran.r-project.org/web/packages/Momocs/Momocs.pdf). The workflow generates whisker plots to a better visualization of concentration dependent effects on the morphological features using the R package [ggplot2](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf). 
 
@@ -41,6 +41,6 @@ This workflow calculates the control variability of the morphological features (
 
 ## Workflow for concentration-response analysis based on thresholds for the deviation of features from normal phenotypes
 
-This workflow creates the concentration-response curves for the morphological features analysed with the FishInspector using the xls files obtained with this [workflow](FishInspector_features.knwf). The concentration-response curves are derived using a four-paramater log-logistic function with the R package [drc](https://cran.r-project.org/web/packages/drc/drc.pdf).
+This workflow creates the concentration-response curves for the morphological features analysed with the FishInspector using the xls files obtained with the two last workflows. The concentration-response curves are derived using a four-paramater log-logistic function with the R package [drc](https://cran.r-project.org/web/packages/drc/drc.pdf).
 
 [KNIME workflow archive](Concentration_response_curves.knwf)
