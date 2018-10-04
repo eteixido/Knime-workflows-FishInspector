@@ -29,14 +29,18 @@ This workflow extracts the coordinates of the annotated features in the FishInsp
 *Mandibular arch distance (96 hpf)
 *Swim bladder presence and size (96 hpf)
 
-The workflow generates whisker plots to a better visualization of concentration dependent effects on the morphological features. 
+The morphological paramaters are calculated using the R packages [Features](https://cran.r-project.org/web/packages/features/features.pdf) and [Momocs](https://cran.r-project.org/web/packages/Momocs/Momocs.pdf). The workflow generates whisker plots to a better visualization of concentration dependent effects on the morphological features using the R package [ggplot2](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf). 
 
-[KNIME workflow archive]
+[KNIME workflow archive](FishInspector_features.knwf)
 
 ## Determination of thresholds for control variability
 
 This workflow calculates the control variability of the morphological features (among different replicates). A range of a two-fold standard deviation around the mean is used as a threshold to indicate deviation from control embryos and calculation of quantal concentration-response curves.
-[KNIME workflow archive]
+
+[KNIME workflow archive](Control_variability.knwf)
 
 ## Workflow for concentration-response analysis based on thresholds for the deviation of features from normal phenotypes
-[KNIME workflow archive]
+
+This workflow creates the concentration-response curves for the morphological features analysed with the FishInspector using the xls files obtained with this [workflow](FishInspector_features.knwf). The concentration-response curves are derived using a four-paramater log-logistic function with the R package [drc](https://cran.r-project.org/web/packages/drc/drc.pdf).
+
+[KNIME workflow archive](Concentration_response_curves.knwf)
