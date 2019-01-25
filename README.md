@@ -14,6 +14,12 @@ More details on the software and the subsequent data analysis can be found in th
 ## Conversion workflow for non-capillary images
 Images not obtained by automatic positioning in a glass capillary - and hence, not presenting capillary boundaries - can be used as well but require automatic conversion to an image with a virtual capillary. This can be done with a KNIME workflow and an embedded imageJ macro. The workflow can handle multiple images simultaneously. An installation of KNIME and imageJ on your computer is required. Depending on the image quality certain parameters of the workflow may have to be adjusted. Images of embryos from a lateral orientation are required.
 
+Knime extensions required: 
+* Knime community contributions - Image Processing
+* Image processing - [ImageJ extension](https://www.knime.com/community/imagej)
+* Knime Quick Forms
+
+
 [Knime workflow archive](Rotate_crop.knwf)
 
 ## Workflow for extraction of JSON files and generation of box-whisker plots for different features
