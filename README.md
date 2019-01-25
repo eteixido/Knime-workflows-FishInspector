@@ -39,7 +39,7 @@ This workflow extracts the coordinates of the annotated features in the FishInsp
 
 The morphological paramaters are calculated using the R packages [Features](https://cran.r-project.org/web/packages/features/features.pdf) and [Momocs](https://cran.r-project.org/web/packages/Momocs/Momocs.pdf). The workflow generates whisker plots to a better visualization of concentration dependent effects on the morphological features using the R package [ggplot2](https://cran.r-project.org/web/packages/ggplot2/ggplot2.pdf). 
 
-[KNIME workflow archive](FishInspector_features_Jan_2019.knwf)
+[KNIME workflow archive](FishInspector_features_-Jan_2019.knwf)
 
 ## Determination of thresholds for control variability
 
