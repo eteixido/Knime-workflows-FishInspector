@@ -20,7 +20,7 @@ Knime extensions required:
 * Knime Quick Forms
 
 
-[Knime workflow archive](Rotate_crop.knwf)
+[Knime workflow archive](Rotate_crop_v2.knwf)
 
 ## Workflow for extraction of JSON files and generation of box-whisker plots for different features
 This workflow extracts the coordinates of the annotated features in the FishInspector JSON files and calculates these morphological parameters: 
