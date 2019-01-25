@@ -9,7 +9,7 @@ You will have to install various KNIME extentions in order to run the workflows.
 
 More details on the software and the subsequent data analysis can be found in the following publication:
 
-*Teixido, E., Kießling, T.R., Krupp, E., Quevedo, C., Muriana, A., Scholz, S., 2018. Automated morphological feature assessment for zebrafish embryo developmental toxicity screens.  Tox. Sci. accepted.*
+*[Teixido, E., Kießling, T.R., Krupp, E., Quevedo, C., Muriana, A., Scholz, S., 2018. Automated morphological feature assessment for zebrafish embryo developmental toxicity screens.  Tox. Sci. accepted.](https://academic.oup.com/toxsci/advance-article/doi/10.1093/toxsci/kfy250/5123521)*
 
 ## Conversion workflow for non-capillary images
 Images not obtained by automatic positioning in a glass capillary - and hence, not presenting capillary boundaries - can be used as well but require automatic conversion to an image with a virtual capillary. This can be done with a KNIME workflow and an embedded imageJ macro. The workflow can handle multiple images simultaneously. An installation of KNIME and imageJ on your computer is required. Depending on the image quality certain parameters of the workflow may have to be adjusted. Images of embryos from a lateral orientation are required.
